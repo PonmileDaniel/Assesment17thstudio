@@ -14,8 +14,7 @@
     "commitlint": "commitlint --edit",
     "sync-envs": "node sync-env-files",
     "build": "npm install",
-    "start": "node app.js",
-    "postinstall": "npm run link-core-modules"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Resilience17",
