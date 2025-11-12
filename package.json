@@ -18,6 +18,7 @@
   "author": "Resilience17",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "@app-core/errors": "file:core/errors",
     "@app-core/handlebars": "file:core/handlebars",
     "@app-core/http-request": "file:core/http-request",

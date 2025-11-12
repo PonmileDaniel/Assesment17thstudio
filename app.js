@@ -1,6 +1,12 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-dynamic-require */
-if (!process.env.__ALREADY_BOOTSTRAPPED_ENVS) require('dotenv').config();
+if (process.env.NODE_ENV !== 'production' && !process.env.__ALREADY_BOOTSTRAPPED_ENVS) {
+  try {
+    require('dotenv').config();
+  } catch (err) {
+    console.log('dotenv not available, using environment variables');
+  }
+}
 
 const fs = require('fs');
 const { createServer } = require('@app-core/server');

@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const { SecretsManagerClient, GetSecretValueCommand } = require('@aws-sdk/client-secrets-manager');
 
 // Reads a single Secrets Manager secret (JSON or string) and injects into process.env
