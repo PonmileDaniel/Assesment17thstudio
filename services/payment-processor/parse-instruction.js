@@ -16,7 +16,7 @@ const spec = `root {
 // Step 2: Parse the spec once (outside the function)
 const parsedSpec = validator.parse(spec);
 
-const supportedCurrencies = ['NGN', 'USD', 'GBP', 'GHS']; // Fixed: NGN instead of USD first
+const supportedCurrencies = ['NGN', 'USD', 'GBP', 'GHS'];
 
 // Helper functions defined first to avoid hoisting issues
 function parseAmount(str) {

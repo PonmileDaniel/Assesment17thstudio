@@ -37,7 +37,7 @@ module.exports = createHandler({
     // Step 7: Return response
     return {
       status: helpers.http_statuses.HTTP_200_OK,
-      message: 'Instruction processed successfully', // Optional
+      message: 'Instruction processed successfully',
       data: response,
     };
   },
